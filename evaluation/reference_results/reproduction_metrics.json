@@ -1,0 +1,57 @@
+{
+  "experiment_type": "independent reconstruction; NOT a verification of saved model",
+  "source_input": "/mnt/data/phishguard_audit_src/phishing-url-xai/data/processed/phishing_url_features_v2.csv",
+  "source_sha256": "a829c695ba38497407b83a2c9306576e9bfcbae234a0f0ec3c36877c328c2966",
+  "input_rows": 235795,
+  "original_label_counts": {
+    "0": 100945,
+    "1": 134850
+  },
+  "distinct_feature_patterns": 30666,
+  "conflicting_feature_patterns": 166,
+  "cleaned_rows": 30500,
+  "cleaned_label_counts": {
+    "0": 29634,
+    "1": 866
+  },
+  "train_rows": 24400,
+  "test_rows": 6100,
+  "test_label_counts": {
+    "0": 5927,
+    "1": 173
+  },
+  "split": "80:20 stratified; random_state=42; unique feature patterns before splitting",
+  "model": "HistGradientBoostingClassifier(max_iter=200,learning_rate=0.1,random_state=42)",
+  "sample_weights": "compute_sample_weight(class_weight=balanced) on training labels",
+  "classes": "0=phishing; 1=legitimate",
+  "accuracy": 0.999344262295082,
+  "balanced_accuracy": 0.9996625611607897,
+  "phishing_precision": 1.0,
+  "phishing_recall": 0.9993251223215792,
+  "phishing_f1": 0.999662447257384,
+  "legitimate_precision": 0.9774011299435028,
+  "legitimate_recall": 1.0,
+  "legitimate_f1": 0.9885714285714285,
+  "roc_auc_phishing_positive": 0.9998342063506771,
+  "confusion_matrix_rows_actual_cols_predicted_labels_0_1": [
+    [
+      5923,
+      4
+    ],
+    [
+      0,
+      173
+    ]
+  ],
+  "test_errors": 4,
+  "sklearn_version": "1.8.0",
+  "python_version": "3.13.5",
+  "no_joblib_or_pickle_loaded": true,
+  "limitations": [
+    "Different algorithms/settings/cleaning from unknown original notebook may change outcomes",
+    "Single stratified split, not group-aware by URL/domain, chronological or independent",
+    "Extreme class imbalance after deduplication; balanced accuracy and class recalls matter",
+    "No claim about deployed saved model until its provenance and test predictions are available",
+    "No evidence of operational performance on unseen live domains or websites"
+  ]
+}

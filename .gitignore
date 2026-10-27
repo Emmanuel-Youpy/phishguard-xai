@@ -1,0 +1,20 @@
+# Do not commit virtual environments, credentials, unreviewed source datasets or local caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+*.bak
+*~
+data/raw/
+data/processed/phishing_url_final_features.csv
+data/processed/phishing_url_processed.csv
+evaluation/generated/
+notebooks/.ipynb_checkpoints/

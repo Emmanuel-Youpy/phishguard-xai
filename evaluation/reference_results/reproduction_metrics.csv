@@ -1,0 +1,12 @@
+metric,score
+accuracy,0.999344262295082
+balanced_accuracy,0.9996625611607897
+phishing_precision,1.0
+phishing_recall,0.9993251223215792
+phishing_f1,0.999662447257384
+legitimate_precision,0.9774011299435028
+legitimate_recall,1.0
+legitimate_f1,0.9885714285714285
+roc_auc_phishing_positive,0.9998342063506771
+test_rows,6100
+test_errors,4

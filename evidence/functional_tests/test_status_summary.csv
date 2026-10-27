@@ -1,0 +1,9 @@
+Test ID,Case,Recorded evidence,Verification status
+TC01,Legitimate example,Original project record; not independently rerun in current packaging review,HISTORICAL RECORD
+TC02,Phishing example,Original project record; not independently rerun in current packaging review,HISTORICAL RECORD
+TC03,Empty URL,26 Oct 2026 screenshot: Please enter a URL; pytest helper test passed,PASS - manual screenshot + automated test
+TC04,Invalid domain,Original project record; automated helper test covers malformed domain,HISTORICAL RECORD + helper test
+TC05,Unsupported scheme,26 Oct 2026 screenshot: ftp://example.com rejected; pytest helper test passed,PASS - manual screenshot + automated test
+TC06,SHAP,Original project screenshot; not reverified for final repository release,HISTORICAL RECORD
+TC07,LIME formatting,"26 Oct 2026 table/chart visibly consistent in feature labels, signs and directions; automated formatter tests passed",PASS - visual formatting only
+TC10,UI footer,Original project record; not independently rerun in current packaging review,HISTORICAL RECORD

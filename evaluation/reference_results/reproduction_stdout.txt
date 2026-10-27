@@ -1,0 +1,24 @@
+{
+  "cleaned_rows": 30500,
+  "cleaned_label_counts": {
+    "0": 29634,
+    "1": 866
+  },
+  "train_rows": 24400,
+  "test_rows": 6100,
+  "accuracy": 0.999344262295082,
+  "balanced_accuracy": 0.9996625611607897,
+  "phishing_recall": 0.9993251223215792,
+  "legitimate_recall": 1.0,
+  "roc_auc_phishing_positive": 0.9998342063506771,
+  "confusion_matrix_rows_actual_cols_predicted_labels_0_1": [
+    [
+      5923,
+      4
+    ],
+    [
+      0,
+      173
+    ]
+  ]
+}

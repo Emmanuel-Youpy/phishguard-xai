@@ -1,0 +1,7 @@
+Metric,Score
+Accuracy,0.9993
+Balanced Accuracy,0.9997
+Phishing Precision,1.0
+Phishing Recall,0.9993
+Phishing F1-score,0.9997
+ROC-AUC,0.9998

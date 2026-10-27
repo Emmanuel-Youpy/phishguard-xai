@@ -1,0 +1,650 @@
+/* =========================================================
+   PHISHGUARD XAI
+   Main Streamlit Dashboard Stylesheet
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. GLOBAL APPLICATION
+   --------------------------------------------------------- */
+
+.stApp {
+    background:
+        radial-gradient(circle at top right, #e8f1ff 0%, transparent 30%),
+        #f5f7fb;
+    color: #172033;
+}
+
+.block-container {
+    max-width: 1180px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Hide Streamlit default footer and menu */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   2. MAIN HEADER
+   --------------------------------------------------------- */
+
+.main-header {
+    background: linear-gradient(
+        135deg,
+        #071a35 0%,
+        #0b2f5b 50%,
+        #1556a0 100%
+    );
+
+    padding: 38px 42px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+
+    box-shadow:
+        0 12px 30px rgba(7, 26, 53, 0.18);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Decorative glow */
+
+.main-header::after {
+    content: "";
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    right: -70px;
+    top: -100px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+}
+
+
+.main-header h1 {
+    color: #ffffff;
+    margin: 0;
+
+    font-size: 2.45rem;
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+}
+
+
+.main-header p {
+    color: #d8e8ff;
+
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    font-size: 1.05rem;
+}
+
+
+/* ---------------------------------------------------------
+   3. TECHNOLOGY BADGES
+   --------------------------------------------------------- */
+
+.badge-container {
+    margin-top: 20px;
+}
+
+
+.badge {
+    display: inline-block;
+
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    color: #ffffff;
+
+    padding: 7px 14px;
+
+    margin-right: 7px;
+    margin-bottom: 6px;
+
+    border-radius: 999px;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   4. DASHBOARD CARDS
+   --------------------------------------------------------- */
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid #e3e9f2;
+
+    border-radius: 16px;
+
+    padding: 25px 28px;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 5px 18px rgba(15, 23, 42, 0.055);
+}
+
+
+.section-title {
+    color: #102a43;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+
+.section-description {
+    color: #64748b;
+
+    font-size: 0.96rem;
+
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   5. STREAMLIT TEXT INPUT
+   --------------------------------------------------------- */
+
+div[data-baseweb="input"] {
+    border-radius: 11px !important;
+
+    background: #ffffff;
+}
+
+
+div[data-baseweb="input"] > div {
+    border-radius: 11px !important;
+}
+
+
+input {
+    font-size: 0.96rem !important;
+}
+
+
+/* Input focus */
+
+div[data-baseweb="input"]:focus-within {
+    box-shadow:
+        0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ---------------------------------------------------------
+   6. ANALYSE BUTTON
+   --------------------------------------------------------- */
+
+.stButton > button {
+    width: 100%;
+
+    min-height: 46px;
+
+    background: linear-gradient(
+        135deg,
+        #0b5ed7,
+        #2563eb
+    );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 11px;
+
+    font-weight: 650;
+
+    font-size: 0.95rem;
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.20);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+
+.stButton > button:hover {
+    background: linear-gradient(
+        135deg,
+        #084298,
+        #1d4ed8
+    );
+
+    color: white;
+
+    border: none;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 16px rgba(37, 99, 235, 0.26);
+}
+
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+
+/* ---------------------------------------------------------
+   7. RESULT / ALERT BOXES
+   --------------------------------------------------------- */
+
+div[data-testid="stAlert"] {
+    border-radius: 14px;
+
+    padding: 16px 18px;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ---------------------------------------------------------
+   8. METRIC CARDS
+   --------------------------------------------------------- */
+
+div[data-testid="stMetric"] {
+    background: #ffffff;
+
+    border: 1px solid #e3e9f2;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 14px rgba(15, 23, 42, 0.055);
+}
+
+
+div[data-testid="stMetricLabel"] {
+    color: #64748b;
+
+    font-size: 0.9rem;
+}
+
+
+div[data-testid="stMetricValue"] {
+    color: #102a43;
+
+    font-weight: 750;
+}
+
+
+/* ---------------------------------------------------------
+   9. HEADINGS
+   --------------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+    color: #102a43;
+}
+
+
+h2 {
+    margin-top: 1.5rem;
+}
+
+
+h3 {
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   10. TABLES / DATAFRAMES
+   --------------------------------------------------------- */
+
+div[data-testid="stDataFrame"] {
+    background: #ffffff;
+
+    border: 1px solid #e3e9f2;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.045);
+}
+
+
+/* ---------------------------------------------------------
+   11. EXPANDERS
+   --------------------------------------------------------- */
+
+div[data-testid="stExpander"] {
+    background: #ffffff;
+
+    border: 1px solid #e3e9f2;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   12. SHAP / LIME CHART AREA
+   --------------------------------------------------------- */
+
+div[data-testid="stPlotlyChart"],
+div[data-testid="stPyplot"] {
+    background: #ffffff;
+
+    border: 1px solid #e3e9f2;
+
+    border-radius: 16px;
+
+    padding: 12px;
+
+    box-shadow:
+        0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ---------------------------------------------------------
+   13. TABS
+   --------------------------------------------------------- */
+
+button[data-baseweb="tab"] {
+    font-weight: 600;
+}
+
+
+div[data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+
+/* ---------------------------------------------------------
+   14. HORIZONTAL DIVIDERS
+   --------------------------------------------------------- */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #e2e8f0;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* ---------------------------------------------------------
+   15. CAPTIONS
+   --------------------------------------------------------- */
+
+div[data-testid="stCaptionContainer"] {
+    color: #64748b;
+}
+
+
+/* ---------------------------------------------------------
+   16. CUSTOM RESULT CARDS
+   --------------------------------------------------------- */
+
+.result-safe {
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #f0fdf4
+        );
+
+    border: 1px solid #86efac;
+    border-left: 5px solid #16a34a;
+
+    border-radius: 15px;
+
+    padding: 20px 24px;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+.result-safe h3 {
+    color: #166534;
+
+    margin: 0 0 5px 0;
+}
+
+
+.result-danger {
+    background:
+        linear-gradient(
+            135deg,
+            #fff1f2,
+            #fef2f2
+        );
+
+    border: 1px solid #fca5a5;
+    border-left: 5px solid #dc2626;
+
+    border-radius: 15px;
+
+    padding: 20px 24px;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+.result-danger h3 {
+    color: #991b1b;
+
+    margin: 0 0 5px 0;
+}
+
+
+/* ---------------------------------------------------------
+   17. INFORMATION PANEL
+   --------------------------------------------------------- */
+
+.info-panel {
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #2563eb;
+
+    border-radius: 13px;
+
+    padding: 17px 20px;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    color: #1e3a5f;
+}
+
+
+/* ---------------------------------------------------------
+   18. FOOTER
+   --------------------------------------------------------- */
+
+.app-footer {
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 0.82rem;
+
+    margin-top: 45px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+/* ---------------------------------------------------------
+   19. MOBILE RESPONSIVENESS
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-header {
+        padding: 28px 24px;
+        border-radius: 16px;
+    }
+
+    .main-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .main-header p {
+        font-size: 0.95rem;
+    }
+
+    .dashboard-card {
+        padding: 20px;
+    }
+
+    .badge {
+        margin-bottom: 8px;
+    }
+}
+/* =========================================================
+   ANALYSIS RESULT
+   ========================================================= */
+
+/* Main result heading */
+h2 {
+    color: #102a43;
+    font-weight: 750;
+    letter-spacing: -0.4px;
+}
+
+/* Streamlit alert/result box */
+div[data-testid="stAlert"] {
+    border-radius: 14px;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 6px 18px rgba(15, 42, 67, 0.06);
+}
+
+/* Probability metric cards */
+div[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 16px;
+    padding: 20px 22px;
+    box-shadow: 0 8px 22px rgba(15, 42, 67, 0.07);
+    min-height: 120px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Small hover effect */
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 42, 67, 0.11);
+}
+
+/* Probability number */
+div[data-testid="stMetricValue"] {
+    font-size: 2.1rem;
+    font-weight: 750;
+    color: #102a43;
+}
+
+/* Probability label */
+div[data-testid="stMetricLabel"] {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #52667a;
+}
+
+/* Horizontal separators */
+hr {
+    border: none;
+    border-top: 1px solid #dce5ef;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* =========================================================
+   XAI EXPLANATION SECTION
+   ========================================================= */
+
+/* Explanation section headings */
+h3 {
+    color: #102a43;
+    font-weight: 750;
+    letter-spacing: -0.3px;
+    margin-top: 1rem;
+}
+
+/* Matplotlib / SHAP chart container */
+div[data-testid="stImage"],
+div[data-testid="stPyplot"] {
+    background: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(15, 42, 67, 0.06);
+}
+
+/* Captions underneath explanation charts */
+div[data-testid="stCaptionContainer"] {
+    color: #718096;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+/* =========================================================
+   LIME EXPLANATION SECTION
+   ========================================================= */
+
+/* Streamlit dataframe/table styling */
+div[data-testid="stDataFrame"] {
+    background: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(15, 42, 67, 0.06);
+}
+
+/* Horizontal separators */
+hr {
+    border: none;
+    border-top: 1px solid #d9e2ec;
+    margin: 2.5rem 0;
+}
+
+/* General explanatory text */
+div[data-testid="stMarkdownContainer"] p {
+    line-height: 1.65;
+}
