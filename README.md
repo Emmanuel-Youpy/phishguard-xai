@@ -3,7 +3,8 @@
 **Project:** An Explainable Machine Learning Framework for Phishing URL Detection  
 **Application:** PhishGuard XAI (Streamlit / Python)  
 **Module:** UFCF9Y-60-M, UWE Bristol  
-**Build assembled:** 27 October 2026
+**Build assembled:** 27 October 2026  
+**Repository attribution reviewed:** 9 November 2026
 
 ## What this package does
 
@@ -78,7 +79,7 @@ The user supplied VS Code evidence showing **14/14 regression tests passed** (25
 
 ## Source, safety and sharing
 
-The application and model files originate from the student's supplied project and a tested correction package; the independent evaluation and some helper refactoring were produced with AI assistance. Review and attribute all work honestly in accordance with your assessment's generative-AI policy. The original dataset was described as **PhiUSIIL**; confirm permission before publicly redistributing any dataset or third-party material. **Keep the repository private until permissions and university submission access requirements are resolved.**
+The application and model files originate from the student's supplied project and a tested correction package. AI assistance was also used for coding changes, tests, the independent evaluation reconstruction, documentation, and substantial drafts of the academic report. **UWE's assessment-specific permissions must be confirmed; acknowledgement alone does not authorise otherwise impermissible work.** The numerical feature dataset is described in the project record as derived from the **PhiUSIIL** source, published under **CC BY 4.0**; see [`docs/DATA_AND_CODE_RIGHTS.md`](docs/DATA_AND_CODE_RIGHTS.md) for source and licence attribution. **This repository may be public, but the dataset licence is not a blanket licence for all code.** Before submission, verify all third-party code, possible personal information and AI-assistance disclosures with the module supervisor. See [`docs/AI_ASSISTANCE_AND_THIRD_PARTY_CREDITS.md`](docs/AI_ASSISTANCE_AND_THIRD_PARTY_CREDITS.md) for the working AI-assistance and third-party credits record.
 
 The saved `.pkl` model and feature list are Python pickle/joblib objects. **Loading pickles can execute arbitrary code.** Only run files from a trusted source in an isolated environment. The provided checksum manifest verifies file consistency, **not model safety**.
 
